@@ -30,18 +30,48 @@
                 name: "用户名字",
                 icon: "用户头像",
                 signature: "签名",
-                gender: 性别
+                gender: 性别,
+                age: 年龄,
                 identity: 身份
+                address: "用户地址",
+                liked: 赞到人数
              }
    
-5. 用户型秀
-   请求地址:
-   请求方式:
-   请求参数:
-   返回参数:
+5. 我的型秀
+   请求地址: http://{host}/users/{userid}/mxing
+   请求方式: GET
+   请求参数: userid -> 用户编号
+             token -> 用户token 
+   返回参数: {
+      film: ”型秀影片地址“,
+      images: [],//照片墙照片地址
+      dynamics：[
+        {
+          id: 动态编号,
+          message: "动态文本信息",
+          film: "动态视频",
+          image:[] //动态图片
+         }
+      ]
+   }
+6. 我的动态
+   请求地址: http://{host}/users/{userid}/dynamic
+   请求方式: GET
+   请求参数: userid -> 用户编号
+   返回参数: 
+   {
+     dynamics:[
+        {
+          id: 动态编号,
+          message: "动态文本信息",
+          film: "动态视频",
+          image:[] //动态图片
+        }
+      ]
+   }
    
-6. 用户课程
-   请求地址:
+6. 我的课程
+   请求地址: http://
    请求方式:
    请求参数:
    返回参数:
