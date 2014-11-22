@@ -35,7 +35,7 @@
    请求参数: id -> 影片编号
    返回参数:
    {
-      description: "影片描述",
+      feature: "影片描述",
       recommend:[],//推荐影片，内部参数参考列表
       actor:{//视频作者
         id: 作者编号，
