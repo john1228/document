@@ -1,11 +1,30 @@
-1. 用户登录
+1. 用户注册
+   请求地址: http://{host}/users
+   请求方式: PUT
+   请求参数: mobile -> 电话号码
+             password -> 密码
+             captcha -> 验证码
+   返回参数: {
+     code: 0/1,#0-注册失败 1-注册成功
+     message: "返回信息"
+     data:{
+       token: "用户token值"
+     }
+   }
+
+2. 用户登录
    请求地址: http://{host}/users
    请求方式: POST
    请求参数: username -> 用户名
              password -> 密码
-   返回参数: {token: "用户token值"}
-   
-2. 用户修改资料
+   返回参数: {
+     code: 0/1,#0-注册失败 1-注册成功
+     message: "",
+     data {
+       token: "用户token值"
+     }
+   }   
+3. 用户修改资料
    请求地址: http://{host}/users/{token}
    请求方式: POST
    请求参数: token -> 用户token信息
@@ -14,62 +33,77 @@
              signature -> 签名
              gender -> 性别
              identity -> 身份 // 1，私教 2.健身爱好者 3.商家
-   返回参数: {code: 1}
-   
-3. 用户登出
+   返回参数: {
+     code: 0/1,#0-注册失败 1-注册成功,
+     message: "返回信息"
+   }
+4. 用户登出
    请求地址: http://{host}/users/{token}
    请求方式: DELETE
    请求参数: token -> 用户token信息
-   返回参数: {code: 1}
+   返回参数: {
+     code: 0/1,#0-注册失败 1-注册成功,
+     message: "返回信息"
+   }
    
-4. 用户信息
+5. 用户信息
    请求地址: http://{host}/users/{token}
    请求方式: GET
    请求参数: token -> 用户token信息
    返回参数: {
-                name: "用户名字",
-                icon: "用户头像",
-                signature: "签名",
-                gender: 性别,
-                age: 年龄,
-                identity: 身份
-                address: "用户地址",
-                liked: 赞到人数
-             }
-   
-5. 我的型秀
+     code: 0/1,
+     message: "",
+     data: {
+             name: "用户名字",
+             icon: "用户头像",
+             signature: "签名",
+             gender: 性别,
+             age: 年龄,
+             identity: 身份
+             address: "用户地址",
+             liked: 赞到人数
+            }
+   }
+6. 我的型秀
    请求地址: http://{host}/users/{userid}/mxing
    请求方式: GET
    请求参数: userid -> 用户编号
              token -> 用户token 
    返回参数: {
-      film: ”型秀影片地址“,
-      images: [],//照片墙照片地址
-      dynamics：[
-        {
-          id: 动态编号,
-          message: "动态文本信息",
-          film: "动态视频",
-          image:[] //动态图片
+     code: 0/1,
+     message: "",
+     data: {
+       film: ”型秀影片地址“,
+       images: [],//照片墙照片地址
+       dynamics：[
+         {
+           id: 动态编号,
+           message: "动态文本信息",
+           film: "动态视频",
+           image:[] //动态图片
          }
-      ]
+       ]
+     }
    }
-6. 我的动态
+7. 我的动态
    请求地址: http://{host}/users/{userid}/dynamic
    请求方式: GET
    请求参数: userid -> 用户编号
    返回参数: 
    {
-     dynamics:[
-        {
-          id: 动态编号,
-          message: "动态文本信息",
-          film: "动态视频",
-          image:[] //动态图片
-        }
-      ]
+     code: 0/1,
+     message: "",
+     data{
+       dynamics:[
+         {
+           id: 动态编号,
+           message: "动态文本信息",
+           film: "动态视频",
+           image:[] //动态图片
+         }
+       ]
+      }
    }
-   
 6. 我的课程
    请求地址: http://
    请求方式:
