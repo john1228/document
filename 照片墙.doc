@@ -1,3 +1,25 @@
 1.上传照片
+  请求地址: http://{}/users/{token}/photo_wall
+  请求方式: PUT
+  请求参数: photo -> 照片
+  返回参数: {
+    code: 0/1,
+    message: ""
+  }
 2.删除照片
+  请求地址: http://{}/users/{token}/photo_wall/{id}
+  请求方式: delete
+  请求参数: id -> 照片编号
+  返回参数: {
+    code: 0/1,
+    message: ""
+  }
 3.更新照片
+  请求地址: http://{}/users/{token}/photo_wall/{id}
+  请求方式: POST
+  请求参数: id -> 编号
+            photo -> 照片
+  返回参数: {
+    code: 0/1,
+    message: ""
+  }
