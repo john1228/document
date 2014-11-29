@@ -1,7 +1,7 @@
 1.我的课程
-  请求地址: http://{host}/users/{token}/courses
+  请求地址: http://{host}/users/{user_id}/courses
   请求方式: GET
-  请求参数: token -> 用户Token
+  请求参数: user_id -> 用户id，当是自己到时候该值为0
             type -> 0-我的授课，1-我的上课
             page -> 1
             //查看
