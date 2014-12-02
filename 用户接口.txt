@@ -24,11 +24,25 @@
        token: "用户token值"
      }
    }   
-3. 用户修改资料
-   请求地址: http://{host}/users/{token}/profile
+3. 第三方登录
+   请求地址: http://{host}/users/sns
    请求方式: POST
-   请求参数: token -> 用户token信息
-             name -> 用户名字
+   请求参数: sns_name -> 那个第三方（weibo,qq,weixin）
+             sns_id -> 第三方对应到ID
+             name -> 第三方昵称
+             icon -> 第三方头像
+             gender -> 第三方性别
+   返回参数: {
+     code: 0/1,#0-注册失败 1-注册成功
+     message: "",
+     data {
+       token: "用户token值"
+     }
+   }
+4. 用户修改资料
+   请求地址: http://{host}/users/0/profile
+   请求方式: POST
+   请求参数: name -> 用户名字
              icon -> 用户头像
              signature -> 签名
              gender -> 性别
@@ -37,20 +51,19 @@
      code: 0/1,#0-注册失败 1-注册成功,
      message: "返回信息"
    }
-4. 用户登出
-   请求地址: http://{host}/users/{token}
+5. 用户登出
+   请求地址: http://{host}/users
    请求方式: DELETE
-   请求参数: token -> 用户token信息
+   请求参数: 无
    返回参数: {
      code: 0/1,#0-注册失败 1-注册成功,
      message: "返回信息"
    }
    
-5. 用户信息
+6. 用户信息
    请求地址: http://{host}/users/{id}/profile
    请求方式: GET
-   请求参数: token -> 用户token信息
-             id -> 查看用户信息到编号，当是自己时id和token值相等
+   请求参数: id -> 查看用户信息到编号，当是自己时id为0
    返回参数: {
      code: 0/1,
      message: "",
@@ -65,7 +78,7 @@
              liked: 赞到人数
             }
    }
-6. 我的型秀
+7. 我的型秀
    请求地址: http://{host}/users/{userid}/mxing
    请求方式: GET
    请求参数: userid -> 用户编号
@@ -86,7 +99,7 @@
        ]
      }
    }
-7. 我的动态
+8. 我的动态
    请求地址: http://{host}/users/{userid}/dynamic
    请求方式: GET
    请求参数: userid -> 用户编号
