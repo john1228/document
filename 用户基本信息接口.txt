@@ -6,6 +6,7 @@
      code: 0/1,
      message: "",
      data: {
+             mid: '美型号'
              name: "用户名字",
              icon: "用户头像",
              signature: "签名",
@@ -13,7 +14,14 @@
              age: 年龄,
              identity: 身份
              address: "用户地址",
-             liked: 赞到人数
+             interests: "健身兴趣"，
+             target: "健身目的",
+             skill: "擅长项目"，
+             often_stadium: "常去的场馆",
+             comment: {
+               star: 9,//每等级半颗星，
+               count: 评论总数
+             }
             }
    }
 2. 更新用户信息
@@ -26,7 +34,10 @@
              age: 年龄,
              identity: 身份
              address: "用户地址",
-             backgroud: 背景图
+             interests: "健身兴趣"，
+             target: "健身目的",
+             skill: "擅长项目"，
+             often_stadium: "常去的场馆",
    返回参数: { 
        code: 0/1,
        message: "提示信息"
