@@ -1,6 +1,15 @@
-1.我到动态
-  请求地址:
-  请求方式:
-  请求参数:
-  返回参数:
+1.动态
+  请求地址: http://{host}/users/{user_id}/dynamics
+  请求方式: GET
+  请求参数: user_id->动态所属用户到编号，当为自己到时候，该值为0
+            page -> 页码
+  返回参数: {
+    code: 1,
+    message: 'success',
+    data:{
+      dynamics:[{
+        
+      }...]
+    }
+  }
 2.发布动态
