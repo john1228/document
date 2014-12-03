@@ -8,7 +8,14 @@
      data: {
              mid: '美型号'
              name: "用户名字",
-             icon: "用户头像",
+             icon: {
+                thumb: "缩略图",
+                original: "原图"
+             },
+             background:{
+                 thumb: "缩略图",
+                 original: "原图"
+             },//该字段暂时不做处理
              signature: "签名",
              gender: 性别,
              age: 年龄,
