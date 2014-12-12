@@ -9,6 +9,8 @@
      message: "返回信息"
      data:{
        token: "用户token值"
+       username: "app和环信对应到key",
+       uuid:"环信ID"
      }
    }
 
@@ -22,6 +24,8 @@
      message: "",
      data {
        token: "用户token值"
+       username: "app和环信对应到key",
+       uuid:"环信ID"
      }
    }   
 3. 第三方登录
@@ -37,6 +41,8 @@
      message: "",
      data {
        token: "用户token值"
+       username: "app和环信对应到key",
+       uuid:"环信ID"
      }
    }
 4. 用户修改资料
