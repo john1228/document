@@ -6,11 +6,15 @@
    返回参数: 
    //首页时
    {
-     today:[{ id: 影片编号,
+     today:[
+       { 
+         no: 影片编号,
          title: "影片标题",
          icon: "影片显示图片展示",
          length: "视频长度",
-         liked: 点赞的人数}],
+         liked: 点赞的人数
+       }
+    ],
      recommend:[],
      polular:[],
      men:[],
@@ -20,7 +24,7 @@
    {
        films: [
        { 
-         id: 影片编号,
+         no: 影片编号,
          title: "影片标题",
          icon: "影片显示图片展示",
          length: "视频长度",
@@ -38,7 +42,7 @@
       feature: "影片描述",
       recommend:[],//推荐影片，内部参数参考列表
       actor:{//视频作者
-        id: 作者编号，
+        no: 作者编号，
         name: "作者名字",
         gender: 作者性别
         icon: "作者头像",
