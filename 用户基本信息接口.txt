@@ -32,7 +32,7 @@
             }
    }
 2. 更新用户信息
-   请求地址: http://{host}/users/{id}/profile
+   请求地址: http://{host}/users/profile
    请求方式: PUT
    请求参数: name: "用户名字",
              icon: "用户头像",
