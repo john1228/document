@@ -1,0 +1,32 @@
+1.上传定位
+  请求地址: http://www.e-mxing.com/users/location
+  请求方式: POST
+  请求参数: lat-> 经度
+            lnt-> 维度
+  返回参数: {
+      code: 0/1,
+      message: 'success'
+  }
+  
+2.附近的人
+  请求地址: http://www.e-mxing.com/users/nearby
+  请求方式: GET
+  请求参数: lat -> 经度
+            lnt -> 维度
+  返回参数: {
+      code: 1,
+      message: 'success',
+      data: {
+        users:[{
+          no: 用户编号
+          name: 昵称,
+          icon: 头像,
+          gender: 性别,
+          signature: 签名,
+          level: 等级,
+          identity: '身份',
+          age: 年龄,
+          distance: '距离米'
+        }]
+      }
+  }
