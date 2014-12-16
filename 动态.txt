@@ -18,7 +18,7 @@
     }
   }
 2.发布动态
-  请求地址: http://{host}/users/0/dynamics
+  请求地址: http://{host}/users/dynamics
   请求方式: POST
   请求参数: type -> 视频类型#0-普通动态 1-视频动态
             title -> 发布视频秀时采用该字段，视频到标题
