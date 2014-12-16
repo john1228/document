@@ -25,7 +25,7 @@
     }
   }
 2.添加课程
-  请求地址: http://{host}/users/{userId}/courses
+  请求地址: http://{host}/users/courses
   请求方式: POST
   请求参数: type -> 添加课程类型,0->添加授课，1-预约课程
             添加授课参数
@@ -43,8 +43,27 @@
      code: 0/1,
      message: ""
   }
-  
-3.删除课程
+3.修改课程
+  请求地址: http://{host}/users/courses
+  请求方式: PUT
+  请求参数: no: 课程编号
+            type -> 添加课程类型,0->添加授课，1-预约课程
+            添加授课参数
+            from -> 开始时间
+            to -> 结束时间
+            category -> 课程大类
+            title -> 课程名
+            target -> 目标
+            sub_category -> 课程类型
+            location -> 地点
+            feature -> 课程简介
+            预约课程参数:
+            id -> 课程编号
+  返回参数: {
+     code: 0/1,
+     message: ""
+  }
+4.删除课程
   请求地址: http://{host}/users/{userId}/courses/{id}
   请求方式: DELETE
   请求参数: userId -> 
