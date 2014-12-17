@@ -1,7 +1,8 @@
 1.动态
-  请求地址: http://{host}/users/{user_id}/dynamics
+  请求地址: http://{host}/users/dynamics
   请求方式: GET
   请求参数: page -> 页码
+            user_id -> 用户编号，查看自己到动态时，编号为0
   返回参数: {
     code: 1,
     message: 'success',
