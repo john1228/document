@@ -1,5 +1,5 @@
 1. 好友列表
-   请求地址: http://{host}/users/0/friends
+   请求地址: http://{host}/users/friends
    请求方式: GET
    请求参数: 无(TOKEN值需传)
    返回参数: {
@@ -16,20 +16,20 @@
        ]
    }
    
-2. 添加好友
-   请求地址: http://www.e-mxing.com/users/friends
-   请求方式: POST
-   请求参数: friend_id -> 要添加到用户到编号
+2. 获取好友信息
+   请求地址: http://www.e-mxing.com/users/friends/{ids}
+   请求方式: GET
+   请求参数: ids -> 好友标记
    返回参数:{
        code: 0/1,
-       message: ''
-   }
-   
-3. 删除好友
-   请求地址: http://www/e-mxing.com/users/friends/{id}
-   请求方式: DELETE
-   请求参数: id->朋友的编号
-   返回参数: {
-       code: 0/1,
        message: 'success'
+       data: [
+          {
+           no: 用户编号
+           name: 昵称,
+           icon: 头像,
+           gender: 性别,
+           signature: 签名
+         }
+       ]
    }
