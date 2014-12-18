@@ -6,17 +6,18 @@
   返回参数: {
     code: 1,
     message: 'success',
-    data:{
-      dynamics:[{
-        no: 动态编号,
-        message: “动态文本内容”，
-        image: {
+    data:[
+    {
+      no: 动态编号,
+      message: “动态文本内容”，
+      images:[
+        {
           thumb: "动态小图",
           original: "动态大图"
-        },
-        film: "动态视频地址"
-      }...]
-    }
+        }...
+      ]
+      film: "动态视频地址"
+    }...]
   }
 2.发布动态
   请求地址: http://{host}/users/dynamics
