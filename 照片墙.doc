@@ -14,7 +14,7 @@
   }
 
 2.上传照片
-  请求地址: http://{}/users/{token}/photos
+  请求地址: http://www.e-mxing.com/users/photos
   请求方式: POST
   请求参数: name -> 照片
             loc -> 上传照片在照片墙中到位置
@@ -23,7 +23,7 @@
     message: ""
   }
 3.删除照片
-  请求地址: http://{}/users/{token}/photos/{id}
+  请求地址: http://www.e-mxing.com/users/photos/{id}
   请求方式: delete
   请求参数: id -> 照片编号
   返回参数: {
@@ -31,7 +31,7 @@
     message: ""
   }
 4.更新照片
-  请求地址: http://{}/users/{token}/photos/{id}
+  请求地址: http://www.e-mxing.com/users/photos
   请求方式: PUT
   请求参数: id -> 编号
             photo -> 照片
