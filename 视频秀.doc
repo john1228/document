@@ -1,0 +1,14 @@
+1.视频秀
+  请求地址: http://www.e-mxing.com/users/showtime
+  请求方式: GET
+  请求参数: user_id->查看用户的编号,查看自己时改值为0或者不传
+  返回参数：{
+     title: '视频标题',
+     icon: '视频图标',
+     length: '视频长度',
+     paht: '视频地址',
+     feature: '视频介绍',
+     liked: 赞的人数
+  }
+
+2.发布视频秀
