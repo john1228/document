@@ -1,5 +1,5 @@
 1.照片墙
-  请求地址: http://www.e-mxing.com/users/photo
+  请求地址: http://www.e-mxing.com/users/photos
   请求方式: GET
   请求参数: user_id -> 用户编号(查看自己时该值为0或者不传)
   返回参数: {
