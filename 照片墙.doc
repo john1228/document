@@ -16,7 +16,7 @@
 2.上传照片
   请求地址: http://{}/users/{token}/photos
   请求方式: POST
-  请求参数: photo -> 照片
+  请求参数: name -> 照片
             loc -> 上传照片在照片墙中到位置
   返回参数: {
     code: 0/1,
