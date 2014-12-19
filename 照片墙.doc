@@ -1,4 +1,19 @@
-1.上传照片
+1.照片墙
+  请求地址: http://www.e-mxing.com/users/photo
+  请求方式: GET
+  请求参数: user_id -> 用户编号(查看自己时该值为0或者不传)
+  返回参数: {
+      code: 1,
+      message: "success",
+      data: [
+       {
+          image: "图片地址",
+          loc: 图片位置
+       }
+      ]
+  }
+
+2.上传照片
   请求地址: http://{}/users/{token}/photos
   请求方式: POST
   请求参数: photo -> 照片
@@ -7,7 +22,7 @@
     code: 0/1,
     message: ""
   }
-2.删除照片
+3.删除照片
   请求地址: http://{}/users/{token}/photos/{id}
   请求方式: delete
   请求参数: id -> 照片编号
@@ -15,7 +30,7 @@
     code: 0/1,
     message: ""
   }
-3.更新照片
+4.更新照片
   请求地址: http://{}/users/{token}/photos/{id}
   请求方式: PUT
   请求参数: id -> 编号
