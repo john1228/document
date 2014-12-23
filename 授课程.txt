@@ -7,8 +7,7 @@
   返回参数:{
     code: 0/1,
     message: "",
-    data:{
-       courses:[
+    data:[
         {
            no: "课程编号",
            title: "课程名",
@@ -23,7 +22,6 @@
            orders:["预订者1","预订者2","预订者3"]
         }
        ]
-    }
   }
 2.添加课程
   请求地址: http://{host}/users/courses
