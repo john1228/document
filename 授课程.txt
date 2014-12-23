@@ -18,7 +18,9 @@
            target: 课程目标,
            sub_category: "课程类型",
            location: "课程地点",
-           feature: "课程简介"
+           feature: "课程简介",
+           available: 0/1,#0该课程可预订，1该课程不可预订
+           orders:["预订者1","预订者2","预订者3"]
         }
        ]
     }
