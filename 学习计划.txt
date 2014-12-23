@@ -17,7 +17,8 @@
       target: 课程目标,
       sub_category: "课程类型",
       location: "课程地点",
-      feature: "课程简介"
+      feature: "课程简介",
+      actor: '发布课程者到usename'
     }
   ]
 }
