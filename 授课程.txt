@@ -1,8 +1,7 @@
 1.我的课程
-  请求地址: http://{host}/users/{user_id}/courses
+  请求地址: http://{host}/users/courses
   请求方式: GET
-  请求参数: user_id -> 用户id，当是自己到时候该值为0
-            type -> 0-我的授课，1-我的上课
+  请求参数: user_id -> 用户id，当是自己到时候该值为0或者不传
             page -> 1
             //查看
   返回参数:{
@@ -27,9 +26,7 @@
 2.添加课程
   请求地址: http://{host}/users/courses
   请求方式: POST
-  请求参数: type -> 添加课程类型,0->添加授课，1-预约课程
-            添加授课参数
-            from -> 开始时间
+  请求参数: from -> 开始时间
             to -> 结束时间
             category -> 课程大类
             title -> 课程名
@@ -37,8 +34,6 @@
             sub_category -> 课程类型
             location -> 地点
             feature -> 课程简介
-            预约课程参数:
-            id -> 课程编号
   返回参数: {
      code: 0/1,
      message: ""
@@ -46,9 +41,7 @@
 3.修改课程
   请求地址: http://{host}/users/courses
   请求方式: PUT
-  请求参数: no: 课程编号
-            type -> 添加课程类型,0->添加授课，1-预约课程
-            添加授课参数
+  请求参数: id -> 课程编号
             from -> 开始时间
             to -> 结束时间
             category -> 课程大类
@@ -57,14 +50,12 @@
             sub_category -> 课程类型
             location -> 地点
             feature -> 课程简介
-            预约课程参数:
-            id -> 课程编号
   返回参数: {
      code: 0/1,
      message: ""
   }
 4.删除课程
-  请求地址: http://{host}/users/{userId}/courses/{id}
+  请求地址: http://{host}/users/courses/{id}
   请求方式: DELETE
   请求参数: userId -> 
             id -> 课程编号
