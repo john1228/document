@@ -9,17 +9,17 @@
    }
    
 2. 赞视频
-   请求地址： http://www.e-mxing.com/showtime/like
+   请求地址： http://www.e-mxing.com/like/showtime
    请求方式： POST
-   请求参数:  id -> 视频秀编号
+   请求参数:  showtime_id -> 视频秀编号
    返回参数:{
       code: 1,
       message: 'success'
    }
 3. 赞动态
-   请求地址: http://www.e-mxing.com/dynamics/like
+   请求地址: http://www.e-mxing.com/like/dynamic
    请求方式: POST
-   请求参数: id -> 动态编号
+   请求参数: dynamic_id -> 动态编号
    返回参数:{
        code: 1,
        message: 'success'
