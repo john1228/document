@@ -9,9 +9,9 @@
    }
    
 2. 赞视频
-   请求地址： http://www.e-mxing.com/like/showtime
+   请求地址： http://www.e-mxing.com/like/film
    请求方式： POST
-   请求参数:  showtime_id -> 视频秀编号
+   请求参数:  film_id -> 视频秀编号
    返回参数:{
       code: 1,
       message: 'success'
