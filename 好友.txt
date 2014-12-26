@@ -15,3 +15,23 @@
          }
        ]
    }
+   
+2. 搜索好友
+   请求地址: http://www.e-mxing.com/users/search
+   请求方式: GET
+   请求参数: keyword -> 好友标记,逗号分开
+   返回参数:{
+       code: 0/1,
+       message: 'success'
+       data: [
+          {
+           no: 用户编号
+           username: 用户名
+           name: 昵称,
+           thumb: 小头像,
+           original: 大图
+           gender: 性别,
+           signature: 签名
+         }
+       ]
+   }
