@@ -12,3 +12,14 @@
   }
 
 2.发布视频秀
+  请求方式: http://www.e-mxing.com/users/showtime
+  请求方式: POST
+  请求参数: title->视频秀标题
+            icon ->视频秀显示图片
+            featue ->视频秀介绍 
+            path ->视频秀地址(上传之后到回传到值)
+  返回参数:{
+     code: 1,
+     message: 'success',
+     data: '视频播放地址'
+  }
