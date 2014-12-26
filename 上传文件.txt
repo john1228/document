@@ -1,0 +1,56 @@
+1.上传视频
+  请求地址: http://www.e-mxing.com/upload/film
+  请求方式: POST
+  请求参数: File -> 上传文件
+  返回参数:{
+      code: 1,
+      message: 'success',
+      data: {
+        path: '地址'，#提交视频时使用此参数
+        length: '视频长度'
+      }
+  }
+2.上传照片
+  请求地址: http://www.e-mxing.com/upload/photo
+  请求方式: POST
+  请求参数: File -> 上传文件
+  返回参数:{
+      code: 1,
+      message: 'success',
+      data: {
+        path: '图片地址'
+      }
+  }
+3.上传头像
+  请求地址: http://www.e-mxing.com/upload/avatar
+  请求方式: POST
+  请求参数: File -> 上传文件
+  返回参数:{
+      code: 1,
+      message: 'success',
+      data: {
+        path: '图片地址'
+      }
+  }
+4.上传视频图
+  请求地址: http://www.e-mxing.com/upload/film_image
+  请求方式: POST
+  请求参数: File -> 上传文件
+  返回参数:{
+      code: 1,
+      message: 'success',
+      data: {
+        path: '图片地址'
+      }
+  }
+5.上传动态图
+  请求地址: http://www.e-mxing.com/upload/dynamic
+  请求方式: POST
+  请求参数: File -> 上传文件
+  返回参数:{
+      code: 1,
+      message: 'success',
+      data: {
+        path: '图片地址'
+      }
+  }
