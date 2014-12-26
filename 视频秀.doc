@@ -17,7 +17,7 @@
   请求参数: title->视频秀标题
             image ->视频秀显示图片
             featue ->视频秀介绍 
-            path ->视频秀地址(上传之后到回传到值)
+            film ->视频
   返回参数:{
      code: 1,
      message: 'success',
