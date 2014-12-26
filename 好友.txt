@@ -19,7 +19,7 @@
 2. 搜索好友
    请求地址: http://www.e-mxing.com/users/search
    请求方式: GET
-   请求参数: keyword -> 好友标记,逗号分开
+   请求参数: keyword -> 关键字
    返回参数:{
        code: 0/1,
        message: 'success'
