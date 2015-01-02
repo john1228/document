@@ -31,7 +31,7 @@
   message: ""
 }
 3.删除课程
-请求地址: http://{host}/users/{userId}/schedules/{id}
+请求地址: http://{host}/users/schedules/{id}
 请求方式: DELETE
 请求参数: id -> 课程编号
 返回参数: {
