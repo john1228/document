@@ -1,9 +1,19 @@
-1. 用户注册
+1. 验证码校验
+   请求方式: http://{host}/users/capture
+   请求方式: post
+   请求参数: capture -> 验证码
+   返回参数: {
+      code: 1,
+      message: '',
+      data: 'token值'
+   }
+
+2. 设置密码和昵称
    请求地址: http://{host}/users
    请求方式: PUT
-   请求参数: mobile -> 电话号码
-             password -> 密码
-             captcha -> 验证码
+   请求参数: password -> 密码
+            name -> 昵称
+   备注: 该请求带校验后的token值放在http header中
    返回参数: {
      code: 0/1,#0-注册失败 1-注册成功
      message: "返回信息"
@@ -14,7 +24,7 @@
      }
    }
 
-2. 用户登录
+3. 用户登录
    请求地址: http://{host}/users
    请求方式: POST
    请求参数: username -> 用户名
@@ -28,7 +38,7 @@
        uuid:"环信ID"
      }
    }   
-3. 第三方登录
+4. 第三方登录
    请求地址: http://{host}/users/sns
    请求方式: POST
    请求参数: sns_name -> 那个第三方（weibo,qq,weixin）
@@ -46,7 +56,7 @@
        uuid:"环信ID"
      }
    }
-4. 用户修改资料
+5. 用户修改资料
    请求地址: http://{host}/users/0/profile
    请求方式: POST
    请求参数: name -> 用户名字
@@ -58,7 +68,7 @@
      code: 0/1,#0-注册失败 1-注册成功,
      message: "返回信息"
    }
-5. 用户登出
+6. 用户登出
    请求地址: http://{host}/users
    请求方式: DELETE
    请求参数: 无
