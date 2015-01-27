@@ -1,5 +1,5 @@
 1.注册
-  请求地址: http://{host}/captcha/{mobile}/regist
+  请求地址: http://{host}/captcha/regist
   请求方式: POST
   请求参数: mobile -> 电话号码 
   返回参数: {
@@ -8,7 +8,7 @@
   }
   
 2.修改密码
-  请求地址: http://{host}/captcha/{mobile}/change
+  请求地址: http://{host}/captcha/change
   请求方式: POST
   请求参数: mobile -> 电话号码
   返回参数: {
