@@ -13,8 +13,8 @@
    请求地址: http://{host}/users/regist
    请求方式: PUT
    请求参数: password -> 密码
-            name -> 昵称
-   备注: 该请求带校验后的token值放在http header中
+             name -> 昵称
+             token -> token值
    返回参数: {
      code: 0/1,#0-注册失败 1-注册成功
      message: "返回信息"
