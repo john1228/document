@@ -10,7 +10,7 @@
    }
 
 2. 设置密码和昵称
-   请求地址: http://{host}/users
+   请求地址: http://{host}/users/regist
    请求方式: PUT
    请求参数: password -> 密码
             name -> 昵称
