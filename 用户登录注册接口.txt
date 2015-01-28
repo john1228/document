@@ -1,7 +1,8 @@
 1. 验证码校验
-   请求方式: http://{host}/users/capture
+   请求方式: http://{host}/users/captcha
    请求方式: post
-   请求参数: capture -> 验证码
+   请求参数: captcha -> 验证码
+             token -> 验证码的token
    返回参数: {
       code: 1,
       message: '',
