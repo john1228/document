@@ -24,3 +24,13 @@
        code: 1,
        message: 'success'
    }
+4. 举报
+   请求地址: http://www.e-mxing.com/reports
+   请求方式: PUT
+   请求参数:
+   type -> 举报类型(1.举报人 2.举报动态 3.举报视频)
+   id -> 举报内容到编号
+   content -> 举报内容
+   返回参数: {
+      code: 1
+   }
